@@ -234,9 +234,8 @@ hr {
 }
 
 #footer {
-    bottom: 0px;
     left: 0;
-    margin-top: 8vh;
+    margin-bottom:0;
     width: 100vw;
     height: 5vh;
     background-color: rgb(66, 65, 65);
