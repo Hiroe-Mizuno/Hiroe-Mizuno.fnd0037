@@ -1,0 +1,245 @@
+body {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249, 145, 26, 0.2);
+    flex-direction: column;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeout 5s ease-in;
+    z-index: 15;
+}
+
+.loadingText {
+    font-family: cursive;
+    font-size: 3rem;
+    margin-bottom: 0%;
+    animation: colChange 5s ease-in;
+}
+
+.spinner {
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+    background-color: rgba(231, 246, 65, 0.1);
+    animation: grow 5s ease-in;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes colChange {
+    from {
+        color: black;
+        font-size: 3rem;
+
+    }
+    to {
+        color: rgba(154, 205, 50, 0);
+        font-size: 1rem;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 40px;
+        height: 40px;
+    }
+    to {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(66, 65, 65);
+    color: white;
+    flex-direction: row;
+    z-index: 5;
+}
+
+#siteLogo {
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background-color:rgba(154, 205, 50, 1) ;
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    transform: rotate(-10deg);
+    color: black;
+    text-decoration: none;
+    box-shadow: 2px 3px 10px 2px rgb(238, 249, 26);
+    font-style: italic;
+    justify-content: center;
+    align-content: center;
+}
+
+#menues {
+    display: flex;
+    margin-left: 170px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+    flex-direction: row;
+    align-items: end;
+}
+
+.menu {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(66, 65, 65);
+    text-decoration: underline white;
+    color: white !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-justify: center;
+}
+
+.menu:hover{
+    background-color: red;
+}
+
+#main-screen {
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-picture {
+    width: 80vw;
+    height: 140vh;
+}
+
+#greeting {
+    width: 300px;
+    height: 60px;
+    margin-top: 270px;
+    color: black;
+    font-family: cursive;
+    font-size: 40px;
+    font-style: italic;
+    text-indent: 35px;
+}
+
+#spoLink {
+    position: fixed;
+    right: 40px;
+    width: 220px;
+    height: 100px;
+    border-radius: 50%;
+    font-family: cursive;
+    background-color: rgba(246, 25, 4, 0.7);
+    border: 0.3px solid white;
+    text-decoration: none;
+    font-size: 20px;
+    bottom: 17px;
+    text-align: center;
+    align-content: center;
+    animation: bounce 5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0)} 
+    50% {transform: translateY(-20px)} 
+}
+
+hr {
+    width: 100vw;
+    height: 120px;
+    margin-top: 0;
+    align-content: center;
+}
+
+#areaLineUP {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    flex-direction: column;
+}
+
+.index {
+    width: 100vw;
+    height: 60px;
+    text-indent: 250px;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    align-content: flex-end;
+}
+
+#gallery {
+    display: flex;
+    width: 100vw;
+    height: 310px;
+    margin-top: 0;
+    gap: 30px;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px rgb(66, 65, 65, 0.6);
+    overflow: hidden;
+}
+
+.home {
+    width: 100vw;
+    height: 40px;
+    margin-top: 0;
+    font-size: 15px;
+    color: rgb(66, 65, 65);
+    text-decoration: underline;
+    text-align: center;
+    align-content: center;
+}
+
+#footer {
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(66, 65, 65);
+    color: white;
+    text-align: center;
+    align-content: center;
+}
