@@ -18,7 +18,7 @@ let greeting = ["Welcome!", "Thank you!", "Keep going!", "Fight!!"];
 document.addEventListener("DOMContentLoaded", function() {
   if(aboutMeButton) {
     aboutMeButton.addEventListener("click", function() {
-    alert("40代・プログラミング歴１ヶ月の Hiroです🐼\n何歳からでもやればできる!!\n諦めないで Keep trying🔥🔥🔥");
+    alert("40代・プログラミング歴１ヶ月の Hiroです🐼\n何歳からでもやればできる!!\nあきらめないで Keep trying🔥🔥🔥");
  
     let newGreeting = document.getElementById("greeting");
     const indexNo = Math.floor(Math.random() * greeting.length);
