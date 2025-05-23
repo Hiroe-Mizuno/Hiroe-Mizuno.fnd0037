@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
  
     let newGreeting = document.getElementById("greeting");
     const indexNo = Math.floor(Math.random() * greeting.length);
-    console.log(indexNo );
     newGreeting.innerHTML = greeting[indexNo];
     });
   }
