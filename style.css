@@ -188,7 +188,7 @@ hr {
 #areaLineUP {
     display: flex;
     width: 100vw;
-    height: 84vh;
+    height: 81vh;
     flex-direction: column;
 }
 
@@ -225,8 +225,7 @@ hr {
 
 .home {
     width: 100vw;
-    height: 3vh;
-    margin-top: 1hv;
+    height: 4vh;
     font-size: 15px;
     color: rgb(66, 65, 65);
     text-decoration: underline;
