@@ -195,6 +195,7 @@ hr {
 .index {
     width: 100vw;
     height: 60px;
+    margin-top: 10vh;
     text-indent: 250px;
     color: black;
     font-size: 30px;
