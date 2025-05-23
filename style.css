@@ -1,7 +1,7 @@
 body {
     display: flex;
     width: 100vw;
-    min-height: 100vh;
+    height: 200vh;
     margin: 0;
     padding: 0;
     background-color: rgba(249, 145, 26, 0.2);
