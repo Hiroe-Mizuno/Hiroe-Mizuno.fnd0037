@@ -1,7 +1,7 @@
 body {
     display: flex;
     width: 100vw;
-    min-height: 200vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: rgba(249, 145, 26, 0.2);
@@ -180,7 +180,7 @@ body {
 
 hr {
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
     margin-top: 0;
     align-content: center;
 }
@@ -188,7 +188,7 @@ hr {
 #areaLineUP {
     display: flex;
     width: 100vw;
-    height: 87vh;
+    height: 85vh;
     flex-direction: column;
 }
 
