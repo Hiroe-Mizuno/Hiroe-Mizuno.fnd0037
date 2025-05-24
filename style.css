@@ -23,7 +23,7 @@ body {
     z-index: 2;
 }
 
-.loadingText {
+#loadingText {
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: cursive;
