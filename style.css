@@ -150,7 +150,7 @@ body {
 #greeting {
     width: 300px;
     height: 60px;
-    margin-top: 48vh;
+    margin-top: 270px;
     color: black;
     font-family: cursive;
     font-size: 40px;
@@ -239,8 +239,8 @@ hr {
 }
 
 #footer {
-    margin-left: 0;
-    martin-bottom: 0;
+    left: 0;
+    bottom: 0;
     width: 100vw;
     height: 5vh;
     background-color: rgb(66, 65, 65);
