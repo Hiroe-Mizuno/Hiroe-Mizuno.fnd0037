@@ -214,6 +214,7 @@ hr {
     margin-top: 0;
     gap: 30px;
     justify-content: center;
+    allign-self: center;
     overflow: hidden;
     flex-direction: row;
 }
