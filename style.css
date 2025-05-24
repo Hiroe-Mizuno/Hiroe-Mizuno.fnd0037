@@ -24,6 +24,7 @@ body {
 }
 
 .loadingText {
+    margin-bottom: 0;
     font-family: cursive;
     font-size: 3rem;
     animation: colChange 5s ease-in;
@@ -33,7 +34,6 @@ body {
 .spinner {
     width: 40px;
     height: 40px;
-    top: 50%
     margin-top: 0;
     border-radius: 50%;
     border: 2px solid yellowgreen;
