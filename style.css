@@ -233,11 +233,12 @@ hr {
 }
 
 #footer {
-    left: 0;
-    bottom: 0;
+    margin-left: 0;
+    martin-bottom: 0;
     width: 100vw;
     height: 5vh;
     background-color: rgb(66, 65, 65);
+    font-size: 15px;
     color: white;
     text-align: center;
     align-content: center;
