@@ -20,6 +20,7 @@ body {
     align-items: center;
     flex-direction: column;
     animation: fadeout 5s ease-in;
+    z-index: 2;
 }
 
 .loadingText {
@@ -27,6 +28,7 @@ body {
     font-size: 3rem;
     margin-bottom: 0%;
     animation: colChange 5s ease-in;
+    z-index: 3;
 }
 
 .spinner {
@@ -37,6 +39,7 @@ body {
     border: 2px solid yellowgreen;
     background-color: rgba(231, 246, 65, 0.1);
     animation: grow 5s ease-in;
+    z-index: 3;
 }
 
 @keyframes fadeout {
@@ -101,6 +104,7 @@ body {
     font-style: italic;
     justify-content: center;
     align-content: center;
+    z-index: 1;
 }
 
 #menues {
@@ -169,6 +173,7 @@ body {
     text-align: center;
     align-content: center;
     animation: bounce 5s ease-in-out infinite;
+    z-index: 1;
 }
 
 @keyframes bounce {
@@ -223,7 +228,7 @@ hr {
 
 .home {
     width: 100vw;
-    height: 4vh;
+    height: 30px;
     margin-top: 2vh;
     font-size: 15px;
     color: rgb(66, 65, 65);
@@ -242,4 +247,5 @@ hr {
     color: white;
     text-align: center;
     align-content: center;
+    overflow: hidden;
 }
