@@ -211,7 +211,7 @@ hr {
 
 #gallery {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 290px;
     margin-top: 0;
     gap: 30px;
