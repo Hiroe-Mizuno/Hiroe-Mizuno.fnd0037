@@ -25,11 +25,11 @@ body {
 
 .loadingText {
     margin-bottom: 0;
+    padding-bottom: 0;
     font-family: cursive;
     font-size: 3rem;
     animation: colChange 5s ease-in;
     z-index: 3;
-    background-color: rgba(231, 246, 65, 1);
 }
 
 .spinner {
@@ -241,7 +241,7 @@ hr {
 
 #footer {
     width: 100vw;
-    height: 5vw;
+    height: 3vw;
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     font-size: 15px;
