@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-color: rgba(249, 145, 26, 0.2);
     flex-direction: column;
-    overflow: hidden;
 }
 
 #loading {
@@ -240,11 +239,11 @@ hr {
 
 #footer {
     width: 100vw;
-    height: auto;
+    height: 5vw;
+    margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     font-size: 15px;
     color: white;
     text-align: center;
     align-content: center;
-    margin-bottom: 0;
 }
