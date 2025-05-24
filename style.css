@@ -214,7 +214,7 @@ hr {
     margin-top: 0;
     gap: 30px;
     justify-content: center;
-    allign-self: center;
+    align-self: center;
     overflow: hidden;
     flex-direction: row;
 }
@@ -248,5 +248,5 @@ hr {
     color: white;
     text-align: center;
     align-content: center;
-    allign-self: flex-end;
+    align-self: flex-end;
 }
