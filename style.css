@@ -20,7 +20,6 @@ body {
     align-items: center;
     flex-direction: column;
     animation: fadeout 5s ease-in;
-    z-index: 15;
 }
 
 .loadingText {
@@ -75,20 +74,19 @@ body {
 #header {
     position: fixed;
     display: flex;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 10vh;
     background-color: rgb(66, 65, 65);
     color: white;
     flex-direction: row;
-    z-index: 5;
 }
 
 #siteLogo {
     position: fixed;
-    margin-left: 20px;
-    margin-top: 15px;
+    left: 20px;
+    top: 15px;
     width: 100px;
     height: 90px;
     border-radius: 50%;
@@ -148,7 +146,7 @@ body {
 #greeting {
     width: 300px;
     height: 60px;
-    margin-top: 270px;
+    margin-top: 50vh;
     color: black;
     font-family: cursive;
     font-size: 40px;
@@ -159,7 +157,8 @@ body {
 #spoLink {
     position: fixed;
     right: 40px;
-    width: 220px;
+    bottom: 3px;
+    width: 200px;
     height: 100px;
     border-radius: 50%;
     font-family: cursive;
@@ -167,7 +166,6 @@ body {
     border: 0.3px solid white;
     text-decoration: none;
     font-size: 20px;
-    bottom: 17px;
     text-align: center;
     align-content: center;
     animation: bounce 5s ease-in-out infinite;
