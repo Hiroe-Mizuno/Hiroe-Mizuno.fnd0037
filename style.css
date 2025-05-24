@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-color: rgba(249, 145, 26, 0.2);
     flex-direction: column;
-    align-items: center;
 }
 
 #loading {
@@ -210,7 +209,7 @@ hr {
 
 #gallery {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 290px;
     margin-top: 0;
     gap: 30px;
