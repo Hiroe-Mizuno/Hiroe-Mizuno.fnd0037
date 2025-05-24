@@ -26,15 +26,14 @@ body {
 .loadingText {
     font-family: cursive;
     font-size: 3rem;
-    margin-bottom: 0%;
     animation: colChange 5s ease-in;
     z-index: 3;
 }
 
 .spinner {
-    top: 50%;
     width: 40px;
     height: 40px;
+    margin-top: 0;
     border-radius: 50%;
     border: 2px solid yellowgreen;
     background-color: rgba(231, 246, 65, 0.1);
@@ -210,7 +209,7 @@ hr {
 
 #gallery {
     display: flex;
-    width: 80vwvw;
+    width: 80vw;
     height: 290px;
     margin-top: 0;
     gap: 30px;
@@ -246,5 +245,5 @@ hr {
     color: white;
     text-align: center;
     align-content: center;
-    align-self: flex-end;
+    margin-bottom: 0;
 }
