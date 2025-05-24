@@ -159,7 +159,7 @@ body {
     text-indent: 35px;
 }
 
-#spoLink {
+#Link {
     position: fixed;
     right: 40px;
     bottom: 3px;
@@ -175,6 +175,12 @@ body {
     align-content: center;
     animation: bounce 5s ease-in-out infinite;
     z-index: 1;
+}
+
+#highlightText {
+    color: #FFD700;
+    font-size: 26px;
+    text-decoration: underline !important;
 }
 
 @keyframes bounce {
