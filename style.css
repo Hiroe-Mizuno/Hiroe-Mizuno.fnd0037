@@ -197,7 +197,7 @@ hr {
 
 .index {
     width: 100vw;
-    height: 10vh;
+    height: 60px;
     margin-top: 10vh;
     text-indent: 10vw;
     color: black;
@@ -209,7 +209,7 @@ hr {
 
 #gallery {
     display: flex;
-    width: 100vw;
+    width: 80vw;
     height: 290px;
     margin-top: 0;
     gap: 30px;
@@ -247,5 +247,5 @@ hr {
     color: white;
     text-align: center;
     align-content: center;
-    overflow: hidden;
+    allign-self: flex-end;
 }
