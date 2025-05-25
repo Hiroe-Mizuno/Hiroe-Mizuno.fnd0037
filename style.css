@@ -194,6 +194,8 @@ hr {
     margin-top: 0;
     align-content: center;
     outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 #areaLineUP {
