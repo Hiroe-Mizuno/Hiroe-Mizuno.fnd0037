@@ -193,6 +193,7 @@ hr {
     height: 10vh;
     margin-top: 0;
     align-content: center;
+    outline: none;
 }
 
 #areaLineUP {
