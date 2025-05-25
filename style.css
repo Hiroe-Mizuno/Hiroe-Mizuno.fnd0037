@@ -193,9 +193,7 @@ hr {
     height: 10vh;
     margin-top: 0;
     align-content: center;
-    outline: none;
-    box-shadow: none;
-    border: none;
+    border-color; rgba(249, 145, 26, 0.2);
 }
 
 #areaLineUP {
