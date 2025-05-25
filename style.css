@@ -192,8 +192,9 @@ hr {
     width: 100vw;
     height: 10vh;
     margin-top: 0;
+    margin-bottom: 0;
     align-content: center;
-    border-color; rgba(249, 145, 26, 0.2);
+    border-color; rgba(249, 145, 26, 0.2)
 }
 
 #areaLineUP {
