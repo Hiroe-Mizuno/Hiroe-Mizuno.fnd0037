@@ -213,6 +213,7 @@ hr {
     width: 80vw;
     height: 10vh;
     align-content: center;
+    overflow: hidden;
     margin-top: 15vh;
     color: black;
     font-size: clamp(12px, 19vw, 30px);
