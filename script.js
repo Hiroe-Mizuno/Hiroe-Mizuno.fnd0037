@@ -2,11 +2,16 @@
 
 // ローディングアニメーション終了後に画面を背面に隠す
 const loadingScreen = document.getElementById("loading");
-setTimeout(hideLodingScreen, 3800);
+setTimeout(hideLodingScreen, 3600);
 function hideLodingScreen() {
   if (loadingScreen) {
     loadingScreen.style.visibility = "hidden";
+    loadingText.style.visibility = "hidden";
+    spinner.style.visibility = "hidden";
+    
     loadingScreen.style.zIndex = "-1";
+    loadingText.style.zIndex = "-1";
+    spinner.style.zIndex = "-1";
   }
 }
 
