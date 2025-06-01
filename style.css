@@ -1,26 +1,28 @@
 body {
-    display: flex;
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    /* scroll-behavior: smooth; */
     background-color: rgba(249, 145, 26, 0.2);
-    flex-direction: column;
 }
 
 #loading {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
     width: 100vw;
     height: 100vh;
-    background: rgba(128, 128, 128, 0.9);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    animation: fadeout 5s ease-in;
+    background: rgba(128, 128, 128, 0.9);
     z-index: 2;
+    visibility: visible;
+    animation: fadeout 4s ease-in;
 }
 
 #loadingText {
@@ -28,19 +30,19 @@ body {
     padding-bottom: 0;
     font-family: cursive;
     font-size: 3rem;
-    animation: colChange 5s ease-in;
     z-index: 3;
+    animation: colChange 4s ease-in;
 }
 
-.spinner {
+#spinner {
     width: 40px;
     height: 40px;
     margin-top: 0;
-    border-radius: 50%;
     border: 2px solid yellowgreen;
+    border-radius: 50%;
     background-color: rgba(231, 246, 65, 0.1);
-    animation: grow 5s ease-in;
     z-index: 3;
+    animation: grow 4s ease-in;
 }
 
 @keyframes fadeout {
@@ -77,57 +79,57 @@ body {
 
 #header {
     position: fixed;
-    display: flex;
     top: 0;
     left: 0;
     width: 100vw;
     height: 10vh;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
     background-color: rgb(66, 65, 65);
     color: white;
-    flex-direction: row;
 }
 
 #siteLogo {
     position: fixed;
-    left: 20px;
-    top: 15px;
-    width: 100px;
-    height: 90px;
-    border-radius: 50%;
-    background-color:rgba(154, 205, 50, 1) ;
-    font-family: cursive;
-    font-size: 35px;
-    font-weight: bolder;
-    transform: rotate(-10deg);
-    color: black;
-    text-decoration: none;
-    box-shadow: 2px 3px 10px 2px rgb(238, 249, 26);
-    font-style: italic;
+    left: 2vw;
+    top: 3vh;
+    width: 8vw;
+    height: 15vh;
+    overflow: hidden;
     justify-content: center;
     align-content: center;
+    border-radius: 50%;
+    background-color:rgba(154, 205, 50, 1) ;
+    color: black;
+    font-family: cursive;
+    font-size: clamp(12px, 8vw, 35px);
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+    box-shadow: 2px 3px 10px 2px rgb(238, 249, 26);
     z-index: 1;
+    transform: rotate(-10deg);
 }
 
 #menues {
     display: flex;
-    margin-left: 170px;
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-size: 18px;
     flex-direction: row;
     align-items: end;
+    margin-left: 15vw;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    font-size: clamp(10px, 19vw, 18px);
 }
 
 .menu {
-    width: 100px;
-    height: 25px;
+    margin-left: 2vw;
+    margin-right: 3vw;
     background-color: rgb(66, 65, 65);
-    text-decoration: underline white;
     color: white !important;
-    margin-left: 20px;
-    margin-right: 20px;
     text-align: center;
     text-justify: center;
+    text-decoration: underline white;
 }
 
 .menu:hover{
@@ -135,12 +137,12 @@ body {
 }
 
 #main-screen {
-    display: flex;
-    margin-top: 0;
-    margin-left: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
     overflow: hidden;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .main-picture {
@@ -149,37 +151,39 @@ body {
 }
 
 #greeting {
-    width: 300px;
-    height: 60px;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
     margin-top: 45vh;
     color: black;
     font-family: cursive;
-    font-size: 40px;
+    font-size: clamp(10px, 19vw, 40px);
     font-style: italic;
-    text-indent: 35px;
+    text-align: center;
 }
 
 #Link {
     position: fixed;
-    right: 40px;
-    bottom: 3px;
-    width: 200px;
-    height: 100px;
-    border-radius: 50%;
-    font-family: cursive;
-    background-color: rgba(246, 25, 4, 0.7);
-    border: 0.3px solid white;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
+    right: 2vw;
+    bottom: 0.5vw;
+    width: 16%;
+    height: 16%;
     align-content: center;
-    animation: bounce 5s ease-in-out infinite;
+    overflow: hidden;
+    border: 0.3px solid white;
+    border-radius: 50%;
+    background-color: rgba(246, 25, 4, 0.7);
+    font-family: cursive;
+    font-size: clamp(12px, 15vw, 20px);
+    text-align: center;
+    text-decoration: none;
     z-index: 1;
+    animation: bounce 5s ease-in-out infinite;
 }
 
 #highlightText {
     color: #FFD700;
-    font-size: 26px;
+    font-size: clamp(12px, 15vw, 26px);
     text-decoration: underline !important;
 }
 
@@ -197,63 +201,78 @@ hr {
 }
 
 #areaLineUP {
-    display: flex;
     width: 100vw;
-    height: 85vh;
-    margin-top: 30vh;
+    height: 87vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }
 
 .index {
-    width: 90vw;
-    height: 60px;
+    width: 80vw;
+    height: 10vh;
+    align-content: center;
     margin-top: 15vh;
-    text-indent: 10vw;
     color: black;
-    font-size: 30px;
+    font-size: clamp(12px, 19vw, 30px);
     font-weight: bolder;
     text-align: left;
-    align-content: center;
 }
 
 #gallery {
+    width: 80vw;
+    height: 45vh;
     display: flex;
-    width: 90vw;
-    height: 300px;
-    margin-top: 0;
-    gap: 30px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    gap: 3vh;
     overflow: hidden;
+    margin-top: 0;
 }
 
 .item {
-    width: 290px;
-    height: 290px;
-    margin-top: 20px;
+    width: 23vw;
+    height: 46vh;
     box-shadow: 2px 3px 3px rgb(66, 65, 65, 0.6);
+    will-change: transform;
+}
+
+.item:hover {
+    filter: brightness(1.5);
+    animation: rotate 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% {transform: rotateY(0deg); opacity: 1;}
+    25% {opacity: 0.6;}
+    50% {opacity: 0.3;}
+    75% {opacity: 0.1;}
+    100% {transform: rotateY(360deg); opacity: 1;}
 }
 
 .home {
     width: 100vw;
-    height: 30px;
-    margin-top: 2vh;
-    font-size: 15px;
-    color: rgb(66, 65, 65);
-    text-decoration: underline;
-    text-align: center;
+    height: 3vh;
     align-content: center;
+    overflow: hidden;
+    margin-top: 2vh;
+    color: rgb(66, 65, 65);
+    font-size: clamp(10px, 19vw, 15px);
+    text-align: center;
+    text-decoration: underline;
 }
 
 #footer {
     width: 100vw;
     height: 3vw;
+    align-content: center;
+    overflow: hidden;
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
-    font-size: 15px;
     color: white;
+    font-size: clamp(10px, 40vw, 15px);
     text-align: center;
-    align-content: center;
 }
