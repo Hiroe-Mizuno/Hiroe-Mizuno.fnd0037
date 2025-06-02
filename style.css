@@ -26,10 +26,11 @@ body {
 }
 
 #loadingText {
+    max-width: 70vw
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: cursive;
-    font-size: clamp(2rem, 70vw, 3rem);
+    font-size: clamp(2rem, 20vw, 3rem);
     z-index: 3;
     animation: colChange 4s ease-in;
 }
