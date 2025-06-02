@@ -26,7 +26,7 @@ body {
 }
 
 #loadingText {
-    max-width: 70vw;
+    max-width: 80vw;
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: cursive;
@@ -63,7 +63,7 @@ body {
     }
     to {
         color: rgba(154, 205, 50, 0);
-        font-size: 1rem;
+        font-size: clamp(0.5rem, 10vw, 1rem);
     }
 }
 
