@@ -58,7 +58,7 @@ body {
 @keyframes colChange {
     from {
         color: black;
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 20vw, 3rem);
 
     }
     to {
