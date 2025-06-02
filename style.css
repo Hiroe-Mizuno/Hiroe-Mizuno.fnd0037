@@ -158,7 +158,7 @@ body {
     margin-top: 45vh;
     color: black;
     font-family: cursive;
-    font-size: clamp(0.5rem, 19vw, 2.5rem);
+    font-size: clamp(0.5rem, 19vw, 2rem);
     font-style: italic;
     text-align: center;
 }
@@ -262,7 +262,7 @@ hr {
     overflow: hidden;
     margin-top: 2vh;
     color: rgb(66, 65, 65);
-    font-size: clamp(10px, 19vw, 15px);
+    font-size: clamp(0.5rem, 19vw, 1rem);
     text-align: center;
     text-decoration: underline;
 }
@@ -275,6 +275,6 @@ hr {
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     color: white;
-    font-size: clamp(10px, 40vw, 15px);
+    font-size: clamp(0.5rem, 40vw, 1rem);
     text-align: center;
 }
