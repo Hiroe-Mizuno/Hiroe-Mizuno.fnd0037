@@ -217,7 +217,7 @@ hr {
     overflow: hidden;
     margin-top: 15vh;
     color: black;
-    font-size: clamp(12px, 19vw, 30px);
+    font-size: clamp(0.5rem, 10vw, 1.5rem);
     font-weight: bolder;
     text-align: left;
 }
