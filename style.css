@@ -30,7 +30,7 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: cursive;
-    font-size: clamp(1.5rem, 20vw, 3rem);
+    font-size: clamp(1.5rem, 6vw, 3rem);
     z-index: 3;
     animation: colChange 4s ease-in;
 }
@@ -58,12 +58,12 @@ body {
 @keyframes colChange {
     from {
         color: black;
-        font-size: clamp(1.5rem, 20vw, 3rem);
+        font-size: clamp(1.5rem, 6vw, 3rem);
 
     }
     to {
         color: rgba(154, 205, 50, 0);
-        font-size: clamp(0.5rem, 10vw, 1rem);
+        font-size: clamp(0.5rem, 2vw, 1rem);
     }
 }
 
@@ -129,7 +129,7 @@ body {
     text-align: center;
     text-justify: center;
     text-decoration: underline white;
-    font-size: clamp(0.2rem, 5vw, 1rem);
+    font-size: clamp(0.2rem, 3vw, 1rem);
 }
 
 .menu:hover{
@@ -157,7 +157,7 @@ body {
     margin-top: 45vh;
     color: black;
     font-family: cursive;
-    font-size: clamp(0.5rem, 19vw, 2rem);
+    font-size: clamp(0.5rem, 3vw, 2rem);
     font-style: italic;
     text-align: center;
 }
@@ -216,7 +216,7 @@ hr {
     overflow: hidden;
     margin-top: 15vh;
     color: black;
-    font-size: clamp(0.5rem, 10vw, 1.5rem);
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
     font-weight: bolder;
     text-align: left;
 }
@@ -261,7 +261,7 @@ hr {
     overflow: hidden;
     margin-top: 2vh;
     color: rgb(66, 65, 65);
-    font-size: clamp(0.5rem, 19vw, 1rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
     text-align: center;
     text-decoration: underline;
 }
@@ -274,6 +274,6 @@ hr {
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     color: white;
-    font-size: clamp(0.5rem, 40vw, 1rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
     text-align: center;
 }
