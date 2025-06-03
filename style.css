@@ -166,6 +166,7 @@ body {
     bottom: 0.5vw;
     width: 16%;
     height: 16%;
+    overflow: hidden;
     align-content: center;
     border: 0.3px solid white;
     border-radius: 50%;
@@ -180,7 +181,7 @@ body {
 
 #highlightText {
     color: #FFD700;
-    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
     text-decoration: underline !important;
 }
 
