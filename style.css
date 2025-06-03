@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    min-height: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
