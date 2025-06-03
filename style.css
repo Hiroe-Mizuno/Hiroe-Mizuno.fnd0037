@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     background-color: rgba(249, 145, 26, 0.2);
 }
 
@@ -95,14 +95,13 @@ body {
     top: 3vh;
     width: 8vw;
     height: 15vh;
-/*     overflow: hidden; */
     justify-content: center;
     align-content: center;
     border-radius: 50%;
     background-color:rgba(154, 205, 50, 1) ;
     color: black;
     font-family: cursive;
-    font-size: clamp(0.2rem, 3vw, 4rem);
+    font-size: clamp(0.5rem, 3vw, 4rem);
     font-style: italic;
     font-weight: bolder;
     text-decoration: none;
@@ -118,7 +117,6 @@ body {
     margin-left: 15vw;
     margin-top: 0;
     margin-bottom: 1vh;
-/*     font-size: clamp(0.2rem, 10vw, 1.5rem); */
 }
 
 .menu {
@@ -129,7 +127,7 @@ body {
     text-align: center;
     text-justify: center;
     text-decoration: underline white;
-    font-size: clamp(0.2rem, 3vw, 1rem);
+    font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 .menu:hover{
@@ -169,12 +167,11 @@ body {
     width: 16%;
     height: 16%;
     align-content: center;
-/*     overflow: hidden; */
     border: 0.3px solid white;
     border-radius: 50%;
     background-color: rgba(246, 25, 4, 0.7);
     font-family: cursive;
-    font-size: clamp(0.2rem, 1.5vw, 2rem);
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
     text-align: center;
     text-decoration: none;
     z-index: 1;
@@ -183,7 +180,7 @@ body {
 
 #highlightText {
     color: #FFD700;
-    font-size: clamp(0.5rem, 2vw, 3rem);
+    font-size: clamp(0.7rem, 2vw, 3rem);
     text-decoration: underline !important;
 }
 
@@ -261,7 +258,7 @@ hr {
     overflow: hidden;
     margin-top: 2vh;
     color: rgb(66, 65, 65);
-    font-size: clamp(0.5rem, 3vw, 1rem);
+    font-size: clamp(0.5rem, 2vw, 1rem);
     text-align: center;
     text-decoration: underline;
 }
@@ -274,6 +271,6 @@ hr {
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     color: white;
-    font-size: clamp(0.5rem, 3vw, 1rem);
+    font-size: clamp(0.5rem, 2vw, 1rem);
     text-align: center;
 }
