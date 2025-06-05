@@ -127,7 +127,7 @@ body {
     text-align: center;
     text-justify: center;
     text-decoration: underline white;
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .menu:hover{
@@ -151,11 +151,11 @@ body {
 #greeting {
     width: 20%;
     height: 20%;
-    overflow: hidden;
+/*     overflow: hidden; */
     margin-top: 45vh;
     color: black;
     font-family: cursive;
-    font-size: clamp(0.5rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-style: italic;
     text-align: center;
 }
@@ -172,7 +172,7 @@ body {
     border-radius: 50%;
     background-color: rgba(246, 25, 4, 0.7);
     font-family: cursive;
-    font-size: clamp(0.5rem, 1.5vw, 1.2rem);
+    font-size: clamp(0,75rem, 1.5vw, 1.2rem);
     text-align: center;
     text-decoration: none;
     z-index: 1;
@@ -181,7 +181,7 @@ body {
 
 #highlightText {
     color: #FFD700;
-    font-size: clamp(0.7rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: underline !important;
 }
 
@@ -214,7 +214,7 @@ hr {
     overflow: hidden;
     margin-top: 15vh;
     color: black;
-    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 2rem);
     font-weight: bolder;
     text-align: left;
 }
@@ -259,7 +259,7 @@ hr {
     overflow: hidden;
     margin-top: 2vh;
     color: rgb(66, 65, 65);
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(0.75rem, 2vw, 1rem);
     text-align: center;
     text-decoration: underline;
 }
@@ -272,6 +272,6 @@ hr {
     margin-bottom: 0;
     background-color: rgb(66, 65, 65);
     color: white;
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(0.75rem, 2vw, 1rem);
     text-align: center;
 }
