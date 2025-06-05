@@ -172,7 +172,7 @@ body {
     border-radius: 50%;
     background-color: rgba(246, 25, 4, 0.7);
     font-family: cursive;
-    font-size: clamp(0,75rem, 2vw, 1.2rem);
+    font-size: clamp(0.75rem, 1.5vw, 1.2rem);
     text-align: center;
     text-decoration: none;
     z-index: 1;
