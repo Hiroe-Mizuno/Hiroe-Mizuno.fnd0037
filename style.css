@@ -172,7 +172,7 @@ body {
     border-radius: 50%;
     background-color: rgba(246, 25, 4, 0.7);
     font-family: cursive;
-    font-size: clamp(0.5rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
     text-align: center;
     text-decoration: none;
     z-index: 1;
@@ -254,7 +254,7 @@ hr {
 
 .home {
     width: 100vw;
-    height: 3vh;
+    height: auto;
     align-content: center;
     overflow: hidden;
     margin-top: 2vh;
