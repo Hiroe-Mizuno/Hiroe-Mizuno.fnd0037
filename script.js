@@ -30,7 +30,7 @@ function introduceMe() {
 }
 
 // お問い合わせボタンがクリックされたらアラート表示
-let qaButton = document.getElementById("QA"); 
+const qaButton = document.getElementById("QA"); 
 if (qaButton) {
   qaButton.addEventListener("click", respondQa);
 }
