@@ -38,9 +38,7 @@ const introduceMe = () => {
 if (qaButton) {
   qaButton.addEventListener("click", respondQa);
 }
-const respondQa = () => {
-  alert("🚧工事中🚧\nただ今 受付けておりません");
-};
+const respondQa = () => alert("🚧工事中🚧\nただ今 受付けておりません");
 
 // LineUPボタンクリックでローディング画面再生後に背面に隠す
 if(lineUpButton) {
