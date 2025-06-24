@@ -10,7 +10,7 @@ const spinner = document.getElementById("spinner");
 const homeButtons = document.querySelectorAll(".home");
 
 // アニメーション画面を背面に隠す
-const hideLodingScreen = () => {
+const hideLoadingScreen = () => {
   if (loadingScreen) {
     loadingScreen.style.visibility = "hidden";
     loadingText.style.visibility = "hidden";
@@ -23,7 +23,7 @@ const hideLodingScreen = () => {
 };
 
 // ローディングアニメーション終了後に画面を背面に隠す
-setTimeout(hideLodingScreen, 3600);
+setTimeout(hideLoadingScreen, 3600);
 
 // aboutMeボタンがクリックされたらアラート表示 & greetingテキスト変更
 if(aboutMeButton) {
@@ -91,5 +91,5 @@ const backMainScreen = () => {
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
 
-  setTimeout(hideLodingScreen, 2300);
+  setTimeout(hideLoadingScreen, 2300);
 };
