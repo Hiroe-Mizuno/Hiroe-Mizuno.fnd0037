@@ -44,7 +44,7 @@ if (qaButton) {
   qaButton.addEventListener("click", respondQa);
 }
 
-// LineUPボタンクリックでローディング画面再生後に背面に隠す
+// LineUPボタンクリックで遷移画面１再生後に背面に隠す
 const showLoadingScreen = () => {
   // アニメーションリセット
   loadingScreen.style.animation = "none";
@@ -64,14 +64,14 @@ const showLoadingScreen = () => {
   loadingScreen.style.zIndex = "5";
   loadingText.innerText = "個性豊かに育ちました！";
 
-  setTimeout(hideLodingScreen, 2800);
+  setTimeout(hideLoadingScreen, 2800);
 };
 
 if(lineUpButton) {
   lineUpButton.addEventListener("click", showLoadingScreen);
 }
 
-// homeボタンクリックでローディング画面再生後に背面に隠す
+// homeボタンクリックで遷移画面２再生後に背面に隠す
 const backMainScreen = () => {
   // アニメーションリセット
   loadingScreen.style.animation = "none";
