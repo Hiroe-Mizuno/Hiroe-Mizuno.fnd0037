@@ -1,7 +1,16 @@
 'use strict'
+// グローバル変数
+const loadingScreen = document.getElementById("loading");
+const aboutMeButton = document.getElementById("aboutMe"); 
+const newGreeting = document.getElementById("greeting");
+const qaButton = document.getElementById("QA"); 
+const lineUpButton = document.getElementById("lineUp"); 
+const loadingText = document.getElementById("loadingText");
+const spinner = document.getElementById("spinner");
+const homeButtons = document.querySelectorAll(".home");
 
 // ローディングアニメーション終了後に画面を背面に隠す
-const loadingScreen = document.getElementById("loading");
+// const loadingScreen = document.getElementById("loading");
 setTimeout(hideLodingScreen, 3600);
 function hideLodingScreen() {
   if (loadingScreen) {
@@ -16,21 +25,22 @@ function hideLodingScreen() {
 }
 
 // aboutMeボタンがクリックされたらアラート表示 & greetingテキスト変更
-const aboutMeButton = document.getElementById("aboutMe"); 
-const newGreeting = document.getElementById("greeting");
-const greeting = ["Welcome!", "Thank you!", "Keep going!", "Fight!!"]; 
+// const aboutMeButton = document.getElementById("aboutMe"); 
+// const newGreeting = document.getElementById("greeting");
+// const greeting = ["Welcome!", "Thank you!", "Keep going!", "Fight!!"]; 
 
 if(aboutMeButton) {
   aboutMeButton.addEventListener("click", introduceMe);
 }
 function introduceMe() {
+  const greeting = ["Welcome!", "Thank you!", "Keep going!", "Fight!!"]; 
   alert("40代・プログラミング歴１ヶ月の Hiroです🐼\n何歳からでもやればできる!!\nあきらめないで Keep trying🔥🔥🔥");
   const indexNo = Math.floor(Math.random() * greeting.length);
   newGreeting.innerText = greeting[indexNo];
 }
 
 // お問い合わせボタンがクリックされたらアラート表示
-const qaButton = document.getElementById("QA"); 
+// const qaButton = document.getElementById("QA"); 
 if (qaButton) {
   qaButton.addEventListener("click", respondQa);
 }
@@ -39,9 +49,9 @@ function respondQa() {
 }
 
 // LineUPボタンクリックでローディング画面再生後に背面に隠す
-const lineUpButton = document.getElementById("lineUp"); 
-const loadingText = document.getElementById("loadingText");
-const spinner = document.getElementById("spinner");
+// const lineUpButton = document.getElementById("lineUp"); 
+// const loadingText = document.getElementById("loadingText");
+// const spinner = document.getElementById("spinner");
 if(lineUpButton) {
   lineUpButton.addEventListener("click", showLoadingScreen);
 }
@@ -68,7 +78,7 @@ function showLoadingScreen() {
 }
 
 // homeボタンクリックでローディング画面再生後に背面に隠す
-const homeButtons = document.querySelectorAll(".home");
+// const homeButtons = document.querySelectorAll(".home");
 homeButtons.forEach(button => { 
   button.addEventListener("click", backMainScreen);
 });
