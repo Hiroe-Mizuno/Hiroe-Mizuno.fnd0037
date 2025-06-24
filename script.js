@@ -26,9 +26,6 @@ const hideLoadingScreen = () => {
 setTimeout(hideLoadingScreen, 3600);
 
 // aboutMeボタンがクリックされたらアラート表示 & greetingテキスト変更
-if(aboutMeButton) {
-  aboutMeButton.addEventListener("click", introduceMe);
-}
 const introduceMe = () => {
   alert("40代・プログラミング歴１ヶ月の Hiroです🐼\n何歳からでもやればできる!!\nあきらめないで Keep trying🔥🔥🔥");
   const greeting = ["Welcome!", "Thank you!", "Keep going!", "Fight!!"]; 
@@ -36,16 +33,18 @@ const introduceMe = () => {
   newGreeting.innerText = greeting[indexNo];
 };
 
+if(aboutMeButton) {
+  aboutMeButton.addEventListener("click", introduceMe);
+}
+
 // お問い合わせボタンがクリックされたらアラート表示
+const respondQa = () => alert("🚧工事中🚧\nただ今 受付けておりません");
+
 if (qaButton) {
   qaButton.addEventListener("click", respondQa);
 }
-const respondQa = () => alert("🚧工事中🚧\nただ今 受付けておりません");
 
 // LineUPボタンクリックでローディング画面再生後に背面に隠す
-if(lineUpButton) {
-  lineUpButton.addEventListener("click", showLoadingScreen);
-}
 const showLoadingScreen = () => {
   // アニメーションリセット
   loadingScreen.style.animation = "none";
@@ -68,11 +67,11 @@ const showLoadingScreen = () => {
   setTimeout(hideLodingScreen, 2800);
 };
 
-// homeボタンクリックでローディング画面再生後に背面に隠す
-homeButtons.forEach(button => { 
-  button.addEventListener("click", backMainScreen);
-});
+if(lineUpButton) {
+  lineUpButton.addEventListener("click", showLoadingScreen);
+}
 
+// homeボタンクリックでローディング画面再生後に背面に隠す
 const backMainScreen = () => {
   // アニメーションリセット
   loadingScreen.style.animation = "none";
@@ -93,3 +92,7 @@ const backMainScreen = () => {
 
   setTimeout(hideLoadingScreen, 2300);
 };
+
+homeButtons.forEach(button => { 
+  button.addEventListener("click", backMainScreen);
+});
