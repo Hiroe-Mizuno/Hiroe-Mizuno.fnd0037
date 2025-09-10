@@ -62,7 +62,7 @@ const showLoadingScreen = () => {
   loadingScreen.style.opacity = "1";
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
-  loadingText.innerText = "All items are unique and special！";
+  loadingText.innerText = "All unique ＆ special！";
 
   setTimeout(hideLoadingScreen, 2800);
 };
