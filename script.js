@@ -62,9 +62,9 @@ const showLoadingScreen = () => {
   loadingScreen.style.opacity = "1";
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
-　 // ここで文字色を赤にする
-  loadingText.style.color = "red";
   loadingText.innerText = "All unique ＆ special！";
+　// ここで文字色を赤にする
+  loadingText.style.color = "red";
 
   //setTimeout(hideLoadingScreen, 2800);
   setTimeout(() => {
