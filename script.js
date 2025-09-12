@@ -62,13 +62,15 @@ const showLoadingScreen = () => {
   loadingScreen.style.opacity = "1";
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
-　  // ここで文字色を赤にする
+　 // ここで文字色を赤にする
   loadingText.style.color = "red";
   loadingText.innerText = "All unique ＆ special！";
 
-  setTimeout(hideLoadingScreen, 2800);
-    // ここで文字色を黒に戻す
+  //setTimeout(hideLoadingScreen, 2800);
+  setTimeout(() => {
+  hideLoadingScreen();
   loadingText.style.color = "black";
+  }, 2800);
 };
 
 if(lineUpButton) {
