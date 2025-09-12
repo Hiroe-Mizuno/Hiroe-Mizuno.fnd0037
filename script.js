@@ -63,14 +63,8 @@ const showLoadingScreen = () => {
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
   loadingText.innerText = "All unique ＆ special！";
-　// ここで文字色を赤にする
-  loadingText.style.color = "red";
 
-  //setTimeout(hideLoadingScreen, 2800);
-  setTimeout(() => {
-  hideLoadingScreen();
-  loadingText.style.color = "black";
-  }, 2800);
+  setTimeout(hideLoadingScreen, 2800);
 };
 
 if(lineUpButton) {
