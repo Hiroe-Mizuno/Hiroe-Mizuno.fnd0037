@@ -62,9 +62,11 @@ const showLoadingScreen = () => {
   loadingScreen.style.opacity = "1";
   loadingScreen.style.background = "rgba(128, 128, 128, 1)";
   loadingScreen.style.zIndex = "5";
+　loadingText.style.color = "red";
   loadingText.innerText = "All unique ＆ special！";
 
   setTimeout(hideLoadingScreen, 2800);
+  loadingText.style.color = "black";
 };
 
 if(lineUpButton) {
